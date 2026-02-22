@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+
+langchain-huggingface
+huggingface_hub
+langchain
+langchain-core
+
+transformers
+accelerate
+bitsandbytes
+
+python-dotenv
+tomli

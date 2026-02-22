@@ -1,0 +1,3 @@
+[model]
+name = "Nanbeige/Nanbeige4.1-3B"
+max_tokens = 256
