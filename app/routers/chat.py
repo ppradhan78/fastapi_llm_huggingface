@@ -9,3 +9,8 @@ chat_service = ChatService()
 def chat(request: ChatRequest):
     response = chat_service.ask(request.message)
     return ChatResponse(response=response)
+
+@router.post("/textclassifier", response_model=ChatResponse)
+def chat(request: ChatRequest):
+    response = chat_service.textclassifier(request.message)
+    return ChatResponse(response=response)

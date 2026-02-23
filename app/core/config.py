@@ -24,6 +24,7 @@ class Settings:
                 config = tomli.load(f)
 
             self.model_name = config["model"]["name"]
+            self.model_name_textclassifier=config["model"]["textclassifier"]
             self.max_tokens = config["model"]["max_tokens"]
             self.hf_token = os.getenv("HF_TOKEN")
 

@@ -1,3 +1,9 @@
 [model]
-name = "Nanbeige/Nanbeige4.1-3B"
+#############################Text Generation###################################
+#https://huggingface.co/Nanbeige/Nanbeige4.1-3B
+#name = "Nanbeige/Nanbeige4.1-3B"
+#name = "zai-org/GLM-5"
+ name = "MiniMaxAI/MiniMax-M2.5"
+ textclassifier="ProsusAI/finbert"
+
 max_tokens = 256
