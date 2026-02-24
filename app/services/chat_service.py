@@ -33,3 +33,17 @@ class ChatService:
         except Exception as e:
             logger.error("Error while generating response"+e, exc_info=True)
         raise
+
+    def summarization(self, message: str) -> str:
+        logger.info("message"+message)
+        logger.info("model" + settings.model_name_summarization)
+        try:
+            completion = self.client.summarization(
+                message,
+            model=settings.model_name_summarization
+
+            )
+            return completion.summary_text
+        except Exception as e:
+            logger.error("Error while generating response"+e, exc_info=True)
+        raise

@@ -14,3 +14,8 @@ def chat(request: ChatRequest):
 def chat(request: ChatRequest):
     response = chat_service.textclassifier(request.message)
     return ChatResponse(response=response)
+
+@router.post("/summarization", response_model=ChatResponse)
+def chat(request: ChatRequest):
+    response = chat_service.summarization(request.message)
+    return ChatResponse(response=response)

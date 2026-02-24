@@ -5,5 +5,10 @@
 #name = "zai-org/GLM-5"
  name = "MiniMaxAI/MiniMax-M2.5"
  textclassifier="ProsusAI/finbert"
+#############################summarization###################################
+# summarization="facebook/bart-large-cnn"
+# summarization="google/pegasus-xsum"
+# summarization="Falconsai/medical_summarization"
+ summarization="google/pegasus-cnn_dailymail"
 
-max_tokens = 256
+ max_tokens = 256
